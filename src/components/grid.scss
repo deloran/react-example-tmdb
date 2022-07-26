@@ -1,0 +1,11 @@
+.grid { width: 100%; border-collapse: collapse }
+.grid thead tr th { background-color: #778; font-weight: normal; padding: 1vmin; }
+.grid tbody tr td { vertical-align: top; text-align: left; padding: 2vmin; }
+.grid tbody tr.odd { background-color: #b8bcc4; }
+.grid tbody tr.even { background-color: #a8acb4; }
+.grid tbody tr td.centered { text-align: center }
+.grid tfoot tr { border-top: 1px solid #000; }
+.grid tfoot tr td > div { display: flex; align-items: center; justify-content: center; }
+.grid tfoot tr td > div > * { margin: 0 1vmin 0 1vmin; }
+.grid tfoot tr td > div > button { font-weight: bold; cursor: pointer; color: inherit; background-color: transparent; border: none; }
+.grid tfoot tr td > div > button.selected { font-weight: bold; text-decoration: underline; }

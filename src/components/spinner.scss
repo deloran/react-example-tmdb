@@ -1,0 +1,11 @@
+.spinner { width: 100%; height: 10vmin; display: flex; align-items: center; justify-content: center; }
+.spinner > div { width: 20vmin;  }
+
+@media (prefers-reduced-motion: no-preference) {
+    .spinner > div { animation: spinner-spin infinite 5s linear; }
+}
+
+@keyframes spinner-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
